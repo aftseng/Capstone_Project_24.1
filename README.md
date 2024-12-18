@@ -19,13 +19,13 @@ The question the project is attempting to answer is what are the features about 
 The data used for this project was sourced from Kaggle at the following link: https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset
 The dataset has 100,000 samples with no null values and a distribution of about 90% of the entries not having diabetes and about 10% of the entries having diabetes. Because of this difference in distribution, it was decided that the recall score would be the main metric used for evaluating the models.
 
-(INSERT DIABETIC VS. NON DIABETIC HERE)
+![nondiabetic_diabetic](https://github.com/user-attachments/assets/499ef7d5-de90-497a-9e58-5c52dec90aa4)
 
 The only cleaning/preparation necessary for the dataset was converting the values of the 'gender' and 'smoking_history' columns from categorical values to numerical values. This was performed by using the get_dummies() function. The columns that were created as a result were then added to the original dataset, with the original 'gender' and 'smoking_history' columns being removed, resulting in a dataset with only numerical values.
 
 Here are the first five rows for the dataset pre-cleaning.
 
-(INSERT PRE-CLEANING DATASET HERE)
+![pre_cleaning](https://github.com/user-attachments/assets/3c0e04f6-f034-4eee-a678-2ae2065274ff)
 
 #### Methodology
 
@@ -68,9 +68,13 @@ The optimal model has 9 neighbors, a weight of 'uniform', a leaf size of 10, and
 #### Results
 After evaluating all the models, the best model for predicting diabetes was the Random Tree Classifier Model, with an accuracy of 0.9738, a precision score of 0.99656, and a recall score of 0.67857. This performance is then followed by the Decision Tree Classifier model, Logistic Regression model, SVM model, and KNearestNeighbor model. This decision was made by evaluating the accuracy, precision, and recall of each model, although the recall score had more weight over the other metrics due to the nature of the topic. This is because it's more important being able to accurately predict true positives then the overall accuracy.
 
-(INSERT IMAGE OF OVERALL RESULTS HERE)
+![overall_results](https://github.com/user-attachments/assets/d3ed7b5f-a915-4d91-8def-435aac84a2fe)
 
-(INSERT ALL IMAGES OF RECALL, PRECISION, ACCURACY)
+![accuracy_score](https://github.com/user-attachments/assets/2449f0e8-ba31-4a0d-af6d-33ca18e823c2)
+
+![precision_score](https://github.com/user-attachments/assets/6116e135-0e40-49c3-9c19-cf66730bf676)
+
+![recall_score](https://github.com/user-attachments/assets/c3281ce1-5d16-4f54-8829-90279390d5d7)
 
 #### Next steps
 
@@ -80,10 +84,9 @@ Additional work can also be done to improve the performance of the optimal model
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
-
+- [Link to Diabetes_Detection](https://github.com/aftseng/Capstone_Project_24.1/blob/main/Diabetes_Detection.ipynb)
+- [Link to Capstone_Evaluation](https://github.com/aftseng/Capstone_Project_24.1/blob/main/Capstone_Evaluation.ipynb)
+- [Link to Dataset](https://github.com/aftseng/Capstone_Project_24.1/blob/main/diabetes_prediction_dataset.csv)
 
 ##### Contact and Further Information
 
